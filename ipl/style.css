@@ -6,6 +6,8 @@
     top:0;
     background: linear-gradient(92.04deg,#18184a 24.18%,#19398a 50.95%,#18184a 110.32%);
    
+    
+   
    
     
 }
@@ -36,7 +38,22 @@
     margin: 10px;
     position: relative;
     bottom: 18px;
-    left:7px;
+    right:270px;
+  }
+
+  .add-button-home{
+    cursor: pointer;
+    background-color: black;
+    border: 0px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 5px 20px;
+    margin: 10px;
+    position: relative;
+    bottom: 18px;
+   
   }
   .add-button:hover {
     box-shadow: 0px 0px 5px white;
@@ -56,7 +73,7 @@
     width: 55%;
     border-radius: 5px;
     position: relative;
-    left:300px;
+    
     top:10px;
     height: 48px;
     box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
@@ -106,7 +123,7 @@
   }
   .search-box .icon {
     position: absolute;
-    left: 480px;
+    left: 400px;
     top: 0px;
     height: 55px;
     width: 55px;
