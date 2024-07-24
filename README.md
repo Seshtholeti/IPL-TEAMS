@@ -51,21 +51,22 @@ const dataContainerStyle = {
   marginTop: "20px",
 };
 const cardStyle = {
-  backgroundColor: "#800080",
+  backgroundColor: "#064b84",
   padding: "8px",
   borderRadius: "5px",
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  height: "30px",
+  height: "22px",
   color: "#fff",
-  fontSize: "14px", // Adjusted font size
-  width: "220px", // Adjusted width
+  fontSize: "35px", // Adjusted font size
+  width: "400px", // Adjusted width
+  fontWeight: "600",
   transition: "background-color 0.3s ease",
 };
 const hoveredCardStyle = {
-  backgroundColor: "red",
-  color: "white",
+  backgroundColor: "#ADD8E6",
+  color: "Black",
   cursor: "pointer",
 };
 const App = () => {
@@ -148,7 +149,7 @@ const App = () => {
     );
   };
   const reservationItems = data.filter(
-    (item) => item.DEPARTMENT === "Reservation center"
+    (item) => item.DEPARTMENT === "Reservation Centre"
   );
   const guestRelationsItems = data.filter(
     (item) => item.DEPARTMENT === "Guest Relations"
@@ -173,16 +174,10 @@ const App = () => {
         <div style={dataContainerStyle}>
           {renderColumn(reservationItems, "Reservation center")}
           {renderColumn(guestRelationsItems, "Guest Relations")}
-          {renderColumn(restaurantItems, "Restaurant")}
+          {/* {renderColumn(restaurantItems, "Restaurant")} */}
         </div>
       )}
     </div>
   );
 };
 export default App;
-
-
-
-Remove the restaurant column as it’s duplicating information and making everything else harder to read - Remove the restaurant column.
-As purple colour ia difficult to see, So make the colour as Whitbread blue. -  We can use this color code, #064b84 for now.
-Font needs to be bigger and bolder. - Make it bigger. Will ask them about feedback.
